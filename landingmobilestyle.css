@@ -1,0 +1,793 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body
+{
+    
+    
+    overflow-x: hidden; 
+}
+/*line seperators*/
+
+hr.beer-line { 
+  border: 0; 
+  height: 2px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+    text-align: center;
+}
+    hr.beer-line:after {
+	content: '\f0fc';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #fff;
+	color: #000678;
+	font-size: 18px;
+}
+hr.cocktail-line { 
+  border: 0; 
+  height: 2px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #000678, #f0f0f0);
+    text-align: center;
+}
+    hr.cocktail-line:after {
+	content: '\f000';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #fff;
+	color: #000678;
+	font-size: 18px;
+}
+.all-the-width {
+    width: 100;
+    clear: both;
+}
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+}
+.facebook-dealst {
+    background-image: url(facebook-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    clear: both;
+    overflow: auto;
+}
+.top {
+    background-image: url(toppic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    clear: both;
+    overflow: auto;
+}
+
+.top-phone {
+    width: 50%;
+    float: left;
+}
+
+.top-copy {
+    width: 50%;
+    float: right;
+}
+
+.top-copy h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 7vw;
+    color: white;
+    margin: 15% 15% 0% 0%;
+}
+
+.top-copy h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+    color: white;
+}
+
+img {
+    width: 50%;
+    /*keeps all images contained to box*/
+}
+
+.brand-logo {
+    margin-left: 2em;
+}
+
+.top-copy img {
+    width: 30%;
+    height: auto;
+    margin: 2px auto 2px auto;
+    display: block;
+}
+
+.top-phone img {
+    margin: auto;
+    padding-top: 15px;
+    display: block;
+}
+
+@media all and (max-width: 700px) {
+    .top-copy img {
+        width: 55%;
+        height: auto;
+        margin-left: auto;
+    }
+    .top-phone img {
+        width: 75%;
+        height: auto;
+        margin: auto;
+    }
+    .top-copy h1 {
+        margin: auto;
+        margin-top: 1em;
+        text-align: center;
+        font-size: 5em;
+    }
+    .top-copy h2 {
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .top-copy,
+    .top-phone {
+        float: none;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .top-copy h1 {
+        font-size: 3.5em;
+    }
+}
+
+
+/*end of css for top section start of happy intro*/
+
+.happy-intro {
+    text-align: center;
+}
+
+.happy-intro h1 {
+    color: #000376;
+}
+@media all and (max-width: 700px) {
+    .happy-intro h1 {
+        font-size: 12vw;
+    }
+}
+
+.happy-intro p {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+@media all and (max-width: 700px) {
+    .happy-intro p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    }
+
+/*end of happy intro start of happy heading*/
+
+.happy-headings {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.headings-left {
+    width: 50%;
+    padding-left: 2%;
+    float: left;
+    display: inline-block;
+}
+
+.headin-right {
+    width: 50%;
+    float: right;
+    display: inline-block;
+}
+
+.headin-right h1 {
+    padding-top: auto;
+    padding-bottom: auto;
+    color: #000367;
+}
+
+@media all and (max-width: 700px) {
+    .headin-right {
+        width: 100%
+    }
+    .headings-left {
+        width: 100%
+    }
+    .headings-left h1 {
+        font-size: 1em;
+    }
+}
+
+
+/*start of happy hour section */
+
+.happy-hours {
+    text-align: center;
+    width: 100%;
+    clear: both;
+    /*background-color: rgba(213, 160, 1, 0.78); */
+   
+}
+
+.happy-hours h5 {
+    margin-right: 60%;
+    margin-left: 10%;
+}
+    @media all and (max-width: 700px) {
+        .happy-hours h5 {
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+}
+
+.happy-hours-left {
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left;
+}
+
+.happy-hours-right {
+    width: 50%;
+    float: right;
+}
+
+.bottom-row>div {
+    width: 50%;
+    float: left;
+}
+
+.top-row>div {
+    width: 50%;
+    float: left;
+}
+
+.drink-type {
+    clear: both;
+}
+
+.happy-hours-right img {
+    width: 50%;
+}
+
+@media all and (max-width: 700px) {
+    .top-row>div {
+        width: 100%;
+    }
+    .bottom-row>div {
+        width: 100%;
+    }
+    .happy-hours-left {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .happy-hours-right {
+        width: 100%;
+    }
+    .happy-hours-right img {
+        width: 70%;
+    }
+}
+
+
+/*start of 2-1 section
+.two-whole {
+    width: 100%;
+    background: rgba(0, 3, 118, 0.55);
+    clear: both;
+}
+.two-one-head {
+    
+    text-align: center;
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+}
+
+.two-one-head h1, 
+.two-one-head h3,
+.two-one-head h2 {
+    color: white;
+}
+
+
+/*.two-one {
+    text-align: center;
+    margin-top: 0%;
+    background-image: url(2-1-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: auto; 
+} */
+
+
+/*
+.two-one {
+  background: 
+    
+    linear-gradient(
+      rgba(0, 3, 118, 0.45), 
+      rgba(0, 3, 118, 0.45)
+    ),
+    
+    url(2-beers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: auto; 
+}
+
+
+.two-one {
+  width: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+
+
+.two-one * {
+    margin-top: 0px;
+}
+.two-one h1 {
+    color: white;
+}
+.two-one-left {
+    width: 29%;
+    border: 2px solid red;
+    float: left;
+    
+} 
+.two-one-middle {
+    width: 40%;
+    border: 2px solid blue;
+    float: left;
+}
+.two-one-right {
+    width: 31%;
+    border: solid 2px yellow;
+    float: left;
+}
+
+ */
+
+
+/* Experimental Section */
+
+
+/*.two-one {
+     background: 
+    
+    linear-gradient(
+      rgba(0, 3, 118, 0.75), 
+      rgba(0, 3, 118, 0.75)
+    ),
+    
+    url(wood.jpeg);
+    background-size:cover;
+    background-repeat:repeat;
+    background-position: center center;
+    overflow: auto; 
+    clear: both;
+}
+*/
+.non-mobile {
+    margin-bottom: 20px;
+}
+.mobile-only {
+    margin-bottom: 20px;
+}
+/*@media all and (max-width: 700px) {
+    .non-mobile {
+        display: none;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .mobile-only {
+        display: none;
+    }
+} 
+*/
+
+
+/*2-1 slider stuff */
+
+div#slider {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+div#slider figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 10s slidy infinite;
+}
+
+div#slider figure img {
+    width: 33.33%;
+    height: auto;
+    float: left;
+    opacity: 70%;
+}
+
+.two-one-mover {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 10s slidy infinite;
+    overflow: hidden /*!important*/;
+}
+
+.two-one-label {
+    width: 33.33%;
+    color: white;
+    float: left;
+    opacity: 70%;
+    height: auto;
+}
+
+.two-one-label h1 {
+    margin-top: 20vw;
+    margin-left: 5%;
+}
+
+.same-line {
+    width: 30%;
+}
+
+.same-line h1 {
+    font-size: 5vw;
+}
+
+.bar-name {
+    color: rgb(213, 160, 1);
+}
+
+.from {
+    color: #41EAD4/*#78C0E0 #FF0F80 #F52F57 just a few other colors that might look good */
+    ;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    45% {
+        left: 0%;
+    }
+    50% {
+        left: -100%;
+    }
+    95% {
+        left: -100%;
+    }
+    100% {
+        left: -200%;
+    }
+}
+
+.two-for-one {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    color: white;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 3, 118, 0.45);
+}
+
+.two-for-one h1 {
+    margin-top: 2%;
+    font-size: 18vw;
+}
+
+
+/*how it works box*/
+
+.how-it-work {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: white;
+    text-align: left;
+    width: 30%;
+    background-color: rgba(213, 160, 1, 0.38);
+    height: 100%;
+}
+
+.how-it-work h1 {
+    text-align: center;
+    font-size: 6vw;
+}
+
+.how-it-work h5 {
+    display: inline;
+    font-size: 4vw;
+    float: left;
+    margin-right: 5%;
+    padding: 5%;
+    margin-left: 2%;
+    border-radius: 30%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    background-color: rgba(213, 160, 1, 0.38);
+    border: 8px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.how-it-work div {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.how-it-work p {
+    display: inline;
+    line-height: 110%;
+    margin-right: 3%;
+    font-size: 2vw;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+/*phone stuff for 2-1 slider part */
+
+.how-it-work-mobile {
+    clear: both;
+    color: black;
+    text-align: left;
+    width: 100%;
+}
+.how-it-work-mobile img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+.img-center {
+    text-align: center;
+}
+
+.how-it-work-mobile h1 {
+    text-align: center;
+    font-size: 12vw;
+    color: #000367;
+}
+
+/*.how-it-work-mobile h5 {
+    display: inline;
+    font-size: 9vw;
+    float: left;
+    margin-right: 5%;
+    padding-left: 5%;
+} */
+.how-it-work-mobile h5 {
+    display: inline;
+    font-size: 9vw;
+    float: left;
+    margin-right: 5%;
+    padding: 5%;
+    margin-left: 3%;
+    border-radius: 30%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    background-color: white;
+    border: 3px solid #000367;
+    color: #000367;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.how-it-work-mobile div {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.how-it-work-mobile p {
+    display: inline;
+    line-height: 120%;
+    font-size: 5vw;
+    margin-right: 3%;
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(213, 160, 1);
+}
+
+.two-one-mobile h1{
+    font-size: 45vw;
+    font-family: 'Fjalla One', sans-serif;
+}
+.phone-sliding-info {
+    
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    
+    position: relative;
+
+}
+
+.phone-mover  {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 10s slidy infinite;
+}
+
+.phone-mover h1 {
+    width: 33.33%;
+    height: auto;
+    float: left;
+    text-align: center;
+    font-size: 10vw;
+}
+
+
+/*2-1 Drinks Intro */
+
+.two-one-head {
+    width: 100%;
+    text-align: center;
+    display: block;
+    clear: both;
+   /* margin-top: 5%;
+    padding-top: 2%; */
+    margin-bottom: -5%;
+    padding-bottom: 5%; 
+}
+
+.two-one-head h1 {
+    color: #000376;
+}
+
+.two-one-head p {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+@media all and (max-width: 700px) {
+    .two-one-head p {
+        margin-left: 20%;
+        margin-right: 20%;
+    } 
+}
+
+ Facebook Deals Section 
+.facebook-dealst {
+    /*width: auto;
+    height: auto;
+    clear: both;*/
+    text-align: center;
+    border: 2px solid blue;
+    background-color: blue;
+    overflow: auto;
+   
+}
+
+.fb-left {
+    clear: both;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+.fb-mid {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+.fb-right {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+} 
+
+.facebook-dealst img {
+    width: 50%;
+}
+
+.facebook-dealst h1 {
+    font-size: 2em;
+    float: left;
+    width: 33%;
+    text-align: center;
+    color: white;
+    
+} 
+/*Facebook Deals Mobile Section */
+
+
+.facebook-deals-mobile {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+.facebook-deals-mobile img {
+    width: 75% ;
+    
+}
+.facebook-deals-mobile h1 {
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 80%;
+}
+.facebook-deals-mobile div {
+    width: 100%;
+    float:left;
+}
+
+.phone-separate {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+@media all and (max-width: 700px) {
+    .non-mobile {
+        display: none;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .mobile-only {
+        display: none;
+    }
+} 

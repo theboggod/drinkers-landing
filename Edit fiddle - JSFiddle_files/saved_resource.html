@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://jsfiddle.net/SXsbL/93/embedded/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="edit-Type" edit="text/html; charset=utf-8">
+
+    
+      <meta name="robots" content="index, follow">
+      <meta name="googlebot" content="index, follow">
+
+      <script async="" src="./analytics.js"></script><script type="text/javascript" src="./highlight.pack.js"></script>
+
+      <script type="text/javascript" src="./embed.js"></script>
+
+
+      
+        <link rel="stylesheet" type="text/css" href="./embed-light.css">
+
+      
+
+      <script type="text/javascript">
+        var height;
+        var force_height = null;
+        var slug = "SXsbL";
+        var show_src = "//fiddle.jshell.net/SXsbL/93/show/light/";
+        var resize_element_counter = 0;
+        var shell_edit_url = '/SXsbL/93/light/';
+
+        
+      </script>
+    
+
+    <link href="./css" rel="stylesheet" type="text/css">
+    <!-- <link href="//fonts.googleapis.com/css?family=Lato:400|Inconsolata" rel="stylesheet" type="text/css"> -->
+
+    <style type="text/css" media="screen">
+      
+      
+      
+      
+    </style>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      
+        <header>
+          <h1><a href="http://jsfiddle.net/SXsbL/93/?utm_source=website&amp;utm_medium=embed&amp;utm_campaign=SXsbL" target="_blank">Edit in JSFiddle</a></h1>
+          <!-- <h1><a href="/SXsbL/93/light/" target="_blank">Edit in JSFiddle</a></h1> -->
+          <div id="actions">
+            <ul class="normalRes">
+              
+                <li class="active">
+                  <a data-trigger-type="js" href="http://jsfiddle.net/SXsbL/93/embedded/#JavaScript">JavaScript</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="html" href="http://jsfiddle.net/SXsbL/93/embedded/#HTML">HTML</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="css" href="http://jsfiddle.net/SXsbL/93/embedded/#CSS">CSS</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="result" href="http://jsfiddle.net/SXsbL/93/embedded/#Result">Result</a>
+                </li>
+              
+            </ul>
+            <div class="hl" style="left: 0px; width: 89.3125px;"></div>
+          </div>
+        </header>
+
+        <div id="tabs">
+          
+            
+              
+                <pre class="tCont  active hljs javascript"><span class="hljs-keyword">var</span> images = [
+    
+    <span class="hljs-string">'http://upload.wikimedia.org/wikipedia/commons/d/de/Yezhik.jpg'</span>,
+    <span class="hljs-string">'http://newtonandnoss.com/hedgehogs/babyhedgehog.jpg'</span>,
+    <span class="hljs-string">'http://i.telegraph.co.uk/multimedia/archive/00668/000508-hedgehog-404_668667c.jpg'</span>
+    
+    
+];
+
+<span class="hljs-keyword">var</span> index = <span class="hljs-number">0</span>;
+
+setInterval(change_up, <span class="hljs-number">4000</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">change_up</span>(<span class="hljs-params"></span>)</span>{
+  
+    index = (index + <span class="hljs-number">1</span> &lt; images.length) ? index + <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
+  
+  $(<span class="hljs-string">'.block'</span>).fadeOut(<span class="hljs-number">300</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+
+    $(<span class="hljs-keyword">this</span>).css(<span class="hljs-string">'background-image'</span>, <span class="hljs-string">'url('</span>+ images[index] + <span class="hljs-string">')'</span>)
+
+    $(<span class="hljs-keyword">this</span>).fadeIn(<span class="hljs-number">300</span>);
+
+  });
+}</pre>
+              
+            
+          
+            
+              
+                <pre class="tCont hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block backpic"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+              
+            
+          
+            
+              
+                <pre class="tCont hljs css"><span class="hljs-selector-class">.block</span> {
+
+    <span class="hljs-attribute">display</span>: block;
+        <span class="hljs-attribute">margin-right</span>: auto;
+    <span class="hljs-attribute">margin-left</span>: auto;
+    <span class="hljs-attribute">clear</span>: both;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+}
+
+
+<span class="hljs-selector-class">.backpic</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">638px</span>;
+    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(http://newtonandnoss.com/hedgehogs/babyhedgehog.jpg);
+    <span class="hljs-attribute">background-size</span>: cover;
+}</pre>
+              
+            
+          
+            <div class="tCont result" id="result"></div>
+              
+            
+          
+        </div>
+      
+    </div>
+
+    
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
+  if (window.localStorage) {
+    ga('create', 'UA-366077-19', {
+      'storage': 'none',
+      'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
+    });
+    ga(function(tracker) {
+      localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
+    });
+    ga('send', 'pageview', '/[fiddle]/[revision]/embedded/'); // where `url_structure` is for example `/[user]/[fiddle]/[revision]/embedded/js,css/`
+  }
+</script>
+
+      
+    
+
+  
+
+</body></html>

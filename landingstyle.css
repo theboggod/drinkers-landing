@@ -1,0 +1,186 @@
+
+
+.navbar {
+    background-color: black;
+    position:fixed;
+    top: 0;
+    opacity: 100%;
+}
+
+
+.top {
+   background-image: url(toppic.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    
+} /*background on first section*/
+
+
+
+.top-phone {
+    width: 80%;
+    height: auto;
+    object-fit: scale-down;
+    
+    margin-top: 90px;
+   
+}
+
+.button {
+    width: 150px;
+    height: auto;
+    float: left;
+  
+}
+    
+
+.top-middle {
+    <!--border: 4px solid orange; -->
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+ display: flex;
+  height:auto;
+  justify-content: center; /* center horizontal */
+  align-items: center; /* center vertical */
+  overflow: hidden;
+     
+    color: white;
+        
+}
+  
+.top-middle h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 7vw;
+    
+}
+
+.top-middle h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+}
+
+.top-left {
+   <!-- border: 3px solid red; -->
+    object-fit: contain;
+     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+ display: flex;
+  height:auto;
+  justify-content: center; /* center horizontal */
+  align-items: center; /* center vertical */
+  overflow: hidden;
+}
+
+.top-right {
+   <!-- border: 3px solid blue; -->
+} 
+
+.empty-left {
+    <!--border: 3px solid purple;-->
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+     
+   
+   
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section {
+background-color: #d49f01;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */   padding-top: 30px;
+    padding bottom: 90px;
+}
+
+.text-box {
+    width: 70%;
+    height 70%;
+   
+    
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #003466;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    border-style: outset;
+   
+}
+
+
+.icons {
+    width: 90%;
+    height: 90%;
+    padding-top: 60px;
+}
+
+.text-box h1 {
+    color: #003466;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+     
+   color: #003466;
+   -webkit-text-fill-color: #003466; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #D49F01;
+   
+}
+
+.text-box h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.right-second {
+      object-fit: contain;
+     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+ display: flex;
+  height:auto;
+  justify-content: center; /* center horizontal */
+  align-items: center; /* center vertical */  
+}
+
+.left-second {
+     object-fit: contain;
+     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+ display: flex;
+  height:auto;
+  justify-content: center; /* center horizontal */
+  align-items: center; /* center vertical */
+  overflow: hidden;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+
+
+.what-is {
+    background-color: #d49f01;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */   padding-top: 30px;
+    padding bottom: 90px;
+}
+
+.what-is h1 {
+    color: white;
+}

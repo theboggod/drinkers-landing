@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="./jquery-compat-git.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    .block {
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+    
+    width: 100%;
+    
+}
+
+
+.backpic {
+    
+    background-image: url(http://newtonandnoss.com/hedgehogs/babyhedgehog.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+  </style>
+
+  <title></title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+$(window).on('load', function() {
+var images = [
+    
+    'http://upload.wikimedia.org/wikipedia/commons/d/de/Yezhik.jpg',
+    'http://newtonandnoss.com/hedgehogs/babyhedgehog.jpg',
+    'http://i.telegraph.co.uk/multimedia/archive/00668/000508-hedgehog-404_668667c.jpg'
+    
+    
+];
+
+var index = 0;
+
+setInterval(change_up, 4000);
+
+function change_up(){
+  
+    index = (index + 1 < images.length) ? index + 1 : 0;
+  
+  $('.block').fadeOut(300, function(){
+
+    $(this).css('background-image', 'url('+ images[index] + ')')
+
+    $(this).fadeIn(300);
+
+  });
+}
+});//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <div class="block backpic" style="background-image: url(&quot;http://i.telegraph.co.uk/multimedia/archive/00668/000508-hedgehog-404_668667c.jpg&quot;);">
+<div class="left">
+<br>
+</div>
+<div class="right">
+<ul>
+<li>iitem</li>
+<li>iitem</li>
+<li>iitem</li>
+<li>iitem</li>
+<li>iitem</li>
+</ul>
+</div>
+</div>
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</body></html>
